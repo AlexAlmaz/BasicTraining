@@ -1,0 +1,61 @@
+﻿@model List<TestWebApplication.Models.Tasks.WorkItemModel>
+
+@{
+    ViewData["Title"] = "Tasks";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Tasks</h1>
+
+</div>
+
+<div class="NewSection">
+    <h3>Create a new Task</h3>
+    @using (Html.BeginForm("Add", "Tasks", FormMethod.Post))
+    {
+        <div>
+            @Html.Label("Enter Task Name")
+            @Html.TextBox("Name")
+        </div>
+        <div>
+            @Html.Label("Description")
+            @Html.TextBox("Description")
+        </div>
+        <div>
+            @Html.Label("Active")
+            @Html.CheckBox("Active", false)
+        </div>
+
+        <div>
+            <input type="submit" value="Add Task" />
+        </div>
+    }
+</div>
+
+<div class="TaskList">
+    @if (Model == null || Model.Count == 0)
+    {
+        <div>
+            There is no any Task.<br />
+            Please add new task
+        </div>
+    }
+    else
+    {
+        @foreach (TestWebApplication.Models.Tasks.WorkItemModel item in Model)
+        {
+
+
+            <div class="TaskItem">
+                <div class="TaskName">
+                    @item.Name
+                </div>
+                <div class="TaskDescription">
+                    @item.Description
+                </div>
+
+            </div>
+        }
+    }
+
+</div>
