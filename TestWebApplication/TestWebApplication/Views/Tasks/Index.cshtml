@@ -18,6 +18,10 @@
             @Html.TextBox("Name")
         </div>
         <div>
+            @Html.Label("Enter Owner Name")
+            @Html.TextBox("Owner")
+        </div>
+        <div>
             @Html.Label("Description")
             @Html.TextBox("Description")
         </div>
@@ -50,10 +54,12 @@
                 <div class="TaskName">
                     @item.Name
                 </div>
+                <div class="TaskOwner">
+                    @item.Owner
+                </div>
                 <div class="TaskDescription">
                     @item.Description
                 </div>
-
             </div>
         }
     }

@@ -11,6 +11,9 @@ namespace TestWebApplication.Models.Tasks
         [Required]
         [Display(Name = "Task Name")]
         public string Name { get; set; }
+        [Required]
+        [Display(Name = "Owner")]
+        public string Owner { get; set; }
 
         public string Description { get; set; }
 

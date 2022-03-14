@@ -124,3 +124,10 @@ body {
     font-size: 18px;
     padding: 10px;
 }
+
+.TaskOwner {
+    text-align: left;
+    border: 1px solid #d2ebfc;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darkslategrey;
+}
