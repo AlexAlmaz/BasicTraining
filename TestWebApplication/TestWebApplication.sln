@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWebApplication", "TestW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomePortal", "..\..\..\HomePortal\HomePortal\HomePortal.csproj", "{DB6404A5-DA84-4E78-8F6C-2F0AE890664D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{CFACDD8E-CC8D-4D3B-952E-3781485807DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{CFACDD8E-CC8D-4D3B-952E-3781485807DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{FA7EF2A4-3E15-4D5A-98B9-1686A5E90362}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{FA7EF2A4-3E15-4D5A-98B9-1686A5E90362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm", "WinForm\WinForm.csproj", "{20CFAC96-38B5-46D3-9CB3-90C004D32C62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FA7EF2A4-3E15-4D5A-98B9-1686A5E90362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA7EF2A4-3E15-4D5A-98B9-1686A5E90362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA7EF2A4-3E15-4D5A-98B9-1686A5E90362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20CFAC96-38B5-46D3-9CB3-90C004D32C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CFAC96-38B5-46D3-9CB3-90C004D32C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CFAC96-38B5-46D3-9CB3-90C004D32C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CFAC96-38B5-46D3-9CB3-90C004D32C62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

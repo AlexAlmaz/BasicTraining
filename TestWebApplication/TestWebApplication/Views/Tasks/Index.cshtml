@@ -9,6 +9,19 @@
 
 </div>
 
+@*Вынеси в PartialView - https://metanit.com/sharp/aspnet5/7.2.php*@
+<div class="Total">
+    <h2> Total tasks created - @Model.Count().ToString()</h2>
+</div>
+
+<div class="Total">
+    <h2> Total symbol in all line...</h2>
+</div>
+<div class="Total">
+    <h2> Total tasks done - @Model.Where(t => t.Done).Count().ToString()</h2>
+    <div> </div>
+</div>
+
 <div class="NewSection">
     <h3>Create a new Task</h3>
     @using (Html.BeginForm("Add", "Tasks", FormMethod.Post))
@@ -24,10 +37,6 @@
         <div>
             @Html.Label("Description")
             @Html.TextBox("Description")
-        </div>
-        <div>
-            @Html.Label("Active")
-            @Html.CheckBox("Active", false)
         </div>
 
         <div>
@@ -48,7 +57,6 @@
     {
         @foreach (TestWebApplication.Models.Tasks.WorkItemModel item in Model)
         {
-
 
             <div class="TaskItem">
                 <div class="TaskName">

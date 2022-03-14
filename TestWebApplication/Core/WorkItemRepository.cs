@@ -1,6 +1,7 @@
 ﻿using Domain;
 using Domain.Interfaces;
 using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace Core
@@ -12,6 +13,7 @@ namespace Core
 
         public void AddWorkItem(WorkItem workItem)
         {
+            workItem.Id = workItems.Count() + 1;
             workItems.Add(workItem);
         }
 

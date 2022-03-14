@@ -13,7 +13,9 @@ namespace TestWebApplication.Extentions
         {
             return new WorkItem
             {
+                Id = model.Id,
                 Name = model.Name,
+                Owner = model.Owner,
                 Description = model.Description,
                 Active = model.Active,
                 Done = model.Done
@@ -24,7 +26,9 @@ namespace TestWebApplication.Extentions
         {
             return new WorkItemModel
             {
+                Id = workItem.Id,
                 Name = workItem.Name,
+                Owner = workItem.Owner,
                 Description = workItem.Description,
                 Active = workItem.Active,
                 Done = workItem.Done

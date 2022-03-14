@@ -8,6 +8,8 @@ namespace TestWebApplication.Models.Tasks
 {
     public class WorkItemModel
     {
+        public int Id { get; set; }
+
         [Required]
         [Display(Name = "Task Name")]
         public string Name { get; set; }

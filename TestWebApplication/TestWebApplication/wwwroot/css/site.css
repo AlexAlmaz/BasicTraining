@@ -88,7 +88,9 @@ body {
 .NewSection input{
     width: 50%;
 }
-
+.Total{
+    font-size: 10px;
+}
 .TaskList{
     margin-top: 20px;
     width: 100%;
@@ -99,9 +101,9 @@ body {
 }
 
 .TaskItem {
-    width: 250px;
-    height: 200px;
-    border: 1px solid #d2ebfc;
+    width: 230px;
+    height: 300px;
+    border: 4px solid #d2ebfc;
     margin: 15px;
 }
 
@@ -111,6 +113,7 @@ body {
     overflow: hidden;
     font-weight: bold;
     font-size: 24px;
+    font-family: Britannic;
     border: 1px solid #d2ebfc;
     background-color: #b8c9fc;
     text-align: center;
@@ -123,11 +126,18 @@ body {
     overflow: hidden;
     font-size: 18px;
     padding: 10px;
+    font-style: italic;
 }
 
 .TaskOwner {
+    width: 100%;
+    height: 60px;
     text-align: left;
-    border: 1px solid #d2ebfc;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:darkslategrey;
+    font-weight: bold;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration:underline;
+    overflow: hidden;
+    color: black;
+    background-color: deepskyblue;
 }
